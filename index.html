@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Organized</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ce5d46",
+              background: "#FCF9F8",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="min-h-screen bg-background text-gray-900">
+    <main class="mx-auto flex min-h-screen max-w-2xl items-center px-6 py-12">
+      <div class="w-full">
+        <header class="mb-10">
+          <img
+            src="./assets/organized.svg"
+            alt="Organized"
+            class="h-8 w-auto"
+          />
+        </header>
+
+        <section
+          class="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm sm:p-10"
+        >
+          <div
+            class="mb-7 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10"
+          >
+            <svg
+              class="h-6 w-6 text-primary"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 5v14" />
+              <path d="M5 12h14" />
+            </svg>
+          </div>
+
+          <h1 class="text-3xl font-semibold tracking-tight">
+            Organized Resources
+          </h1>
+
+          <p class="mt-3 text-base leading-7 text-gray-600">
+            Public information and account management resources for the
+            Organized application.
+          </p>
+
+          <div class="mt-8 space-y-4">
+            <a
+              href="./privacy-policy"
+              class="block rounded-xl border border-gray-200 bg-gray-50 p-5 transition hover:border-primary/30 hover:bg-primary/5"
+            >
+              <h2 class="font-medium">Privacy Policy</h2>
+
+              <p class="mt-2 text-sm leading-6 text-gray-600">
+                Learn how Organized collects, uses, stores, and protects your
+                information.
+              </p>
+            </a>
+
+            <a
+              href="./delete-account"
+              class="block rounded-xl border border-gray-200 bg-gray-50 p-5 transition hover:border-primary/30 hover:bg-primary/5"
+            >
+              <h2 class="font-medium">Delete Your Account</h2>
+
+              <p class="mt-2 text-sm leading-6 text-gray-600">
+                Request deletion of your Organized account and associated data.
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <footer class="mt-8 text-center text-sm text-gray-500">
+          <p>© 2026 Organized</p>
+
+          <nav class="mt-2 flex justify-center gap-4">
+            <a href="./privacy-policy" class="transition hover:text-primary">
+              Privacy Policy
+            </a>
+
+            <a href="./delete-account" class="transition hover:text-primary">
+              Delete Account
+            </a>
+          </nav>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

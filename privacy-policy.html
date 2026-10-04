@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Privacy Policy · Organized</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -25,8 +26,12 @@
     <main class="mx-auto max-w-4xl px-6 py-12 sm:py-16">
       <!-- Header -->
       <header class="mb-12">
-        <a href="./index.html" class="text-2xl font-semibold tracking-tight">
-          Organized
+        <a href="./" class="inline-block">
+          <img
+            src="./assets/organized.svg"
+            alt="Organized"
+            class="h-8 w-auto"
+          />
         </a>
 
         <div class="mt-8">
@@ -103,17 +108,17 @@
             </p>
 
             <p>
-              Where processing is based on consent and applicable law requires
-              parental authorization for users below a particular age, the
-              applicable requirements will apply.
+              Organized does not currently use direct age verification or
+              require parental consent as part of account creation or use of the
+              Service. Where applicable law imposes additional requirements
+              concerning the processing of children's personal data, those
+              requirements will apply.
             </p>
 
-            <div class="rounded-xl bg-amber-50 p-5 text-sm text-amber-900">
-              <strong>To be finalized:</strong>
-              Confirm whether any Organized processing relies on consent and
-              whether any additional age-verification or parental-consent
-              mechanism is required.
-            </div>
+            <p>
+              Organized does not rely on consent as a condition for users aged
+              13 and older to use the core Service.
+            </p>
           </div>
         </section>
 
@@ -178,20 +183,18 @@
               </p>
 
               <p class="mt-3">
-                When you sign in with Google, Organized uses Google's
-                authentication services to verify your identity. The backend
-                exchanges the authentication information required for this
-                purpose with Google and receives the account information
-                described above.
+                When you sign in with Google, the Organized application obtains
+                a Google ID token from Google's authentication services and
+                sends that ID token to the Organized backend.
               </p>
 
-              <div
-                class="mt-5 rounded-xl bg-amber-50 p-5 text-sm text-amber-900"
-              >
-                <strong>To be finalized:</strong>
-                Confirm the exact Google authentication flow and whether any
-                additional Google data is ever received.
-              </div>
+              <p class="mt-3">
+                The Organized backend exchanges and verifies the ID token with
+                Google's authentication service and receives the Google account
+                information necessary for account authentication and account
+                functionality, including your email address, Google account
+                identifier (<code>sub</code>), and display name.
+              </p>
             </div>
           </div>
         </section>
@@ -324,14 +327,21 @@
                 logs.
               </p>
 
-              <div
-                class="mt-5 rounded-xl bg-amber-50 p-5 text-sm text-amber-900"
-              >
-                <strong>To be finalized:</strong>
-                Verify whether the hosting environment, reverse proxy, operating
-                system, Docker, or other infrastructure retains additional logs
-                such as IP addresses or user-agent information.
-              </div>
+              <p class="mt-3">
+                Organized does not intentionally collect or store IP addresses,
+                user-agent information, or similar infrastructure-level
+                connection information as part of its own application logging
+                described above.
+              </p>
+
+              <p class="mt-3">
+                However, the hosting provider or other infrastructure used to
+                operate the Service may independently generate or retain
+                technical logs, such as connection information, for
+                infrastructure operation, security, abuse prevention, or other
+                purposes. Such processing is governed by the applicable
+                provider's own policies and contractual arrangements.
+              </p>
             </div>
           </div>
         </section>
@@ -389,13 +399,12 @@
               report unless it is necessary to explain the issue.
             </p>
 
-            <p>Reports are retained for up to <strong>365 days</strong>.</p>
-
-            <div class="rounded-xl bg-amber-50 p-5 text-sm text-amber-900">
-              <strong>To be finalized:</strong>
-              Confirm and document the operational or security reason for the
-              365-day report retention period.
-            </div>
+            <p>
+              Reports are retained for up to <strong>365 days</strong> so that
+              Organized can investigate reported issues, identify recurring bugs
+              and technical problems, compare related reports over time, and
+              improve the reliability and maintenance of the Service.
+            </p>
           </div>
         </section>
 
@@ -420,8 +429,22 @@
             </p>
 
             <p>
-              Organized uses Expo's push notification services and the Expo
-              Server SDK to send push notifications.
+              Organized uses the Expo Server SDK and Expo's push notification
+              services for push notification delivery.
+            </p>
+
+            <p>
+              When a notification is sent, Organized sends the relevant push
+              notification request and token to Expo's servers. Expo then
+              forwards the notification through the applicable platform push
+              notification service, including Firebase Cloud Messaging (FCM) for
+              Android devices.
+            </p>
+
+            <p>
+              The information involved in this process may include the push
+              notification token and the notification payload necessary to
+              deliver the notification.
             </p>
 
             <p>
@@ -434,12 +457,6 @@
               Organized does not use push notification tokens for advertising or
               cross-service tracking.
             </p>
-
-            <div class="rounded-xl bg-amber-50 p-5 text-sm text-amber-900">
-              <strong>To be finalized:</strong>
-              Confirm the exact Expo services used for push delivery and their
-              applicable processing and transfer locations.
-            </div>
           </div>
         </section>
 
@@ -645,12 +662,6 @@
               backup, technical log, or previously submitted report to disappear
               immediately.
             </p>
-
-            <div class="rounded-xl bg-amber-50 p-5 text-sm text-amber-900">
-              <strong>To be finalized:</strong>
-              Confirm whether any other legally required or operational
-              retention periods apply.
-            </div>
           </div>
         </section>
 
@@ -710,14 +721,19 @@
                 resource in addition to the in-app deletion mechanism.
               </p>
 
-              <p class="mt-3 font-medium text-primary">
-                [PUBLIC ACCOUNT-DELETION WEBPAGE URL — PLACEHOLDER]
-              </p>
+              <a
+                href="https://apporganized.github.io/pages/delete-account"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-3 block font-medium text-primary hover:underline"
+              >
+                https://apporganized.github.io/pages/delete-account
+              </a>
 
               <p class="mt-3 text-gray-700 leading-7">
-                This webpage will provide instructions for requesting deletion
-                of an Organized account without requiring the user to reinstall
-                or access the application.
+                This webpage provides a way to request deletion of an Organized
+                account without requiring the user to reinstall or access the
+                application.
               </p>
             </div>
           </div>
@@ -895,7 +911,9 @@
                     <td class="px-5 py-4">Hosting provider</td>
                     <td class="px-5 py-4">Backend/database infrastructure</td>
                     <td class="px-5 py-4">
-                      Data required to operate the Organized service
+                      Data required to operate the Organized service and
+                      infrastructure-level technical information that may be
+                      generated by the provider
                     </td>
                   </tr>
                 </tbody>
@@ -915,39 +933,135 @@
             </p>
 
             <div>
+              <h3 class="text-lg font-semibold text-gray-900">Google</h3>
+
+              <p class="mt-3">
+                Google provides the authentication services used by Organized.
+                Google's processing of personal information is governed by
+                Google's own privacy policy.
+              </p>
+
+              <p class="mt-3">
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-medium text-primary hover:underline"
+                >
+                  Google Privacy Policy
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Expo</h3>
+
+              <p class="mt-3">
+                Expo provides the push notification services used by Organized.
+                Expo's processing of personal information, including end-user
+                push tokens, is governed by Expo's own privacy policy.
+              </p>
+
+              <p class="mt-3">
+                <a
+                  href="https://expo.dev/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-medium text-primary hover:underline"
+                >
+                  Expo Privacy Policy
+                </a>
+              </p>
+            </div>
+
+            <!-- <div>
+              <h3 class="text-lg font-semibold text-gray-900">
+                Hosting and infrastructure provider
+              </h3>
+
+              <p class="mt-3">
+                Organized's backend, database, backups, and locally hosted
+                monitoring infrastructure operate on infrastructure located in
+                the European Union.
+              </p>
+
+              <p class="mt-3">
+                The infrastructure provider may process technical information
+                generated through operation of the infrastructure, in accordance
+                with its own privacy policy and applicable contractual
+                arrangements.
+              </p>
+
+              <p class="mt-3">
+                <a
+                  href="[HOSTING_PROVIDER_PRIVACY_POLICY_URL]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-medium text-primary hover:underline"
+                >
+                  Hosting provider privacy policy
+                </a>
+              </p>
+            </div> -->
+
+            <div>
               <h3 class="text-lg font-semibold text-gray-900">
                 International transfers
               </h3>
 
               <p class="mt-3">
                 Organized's primary backend, database, backup, and monitoring
-                infrastructure is located in the European Union.
+                infrastructure is located within the European Union.
               </p>
 
-              <div
-                class="mt-5 rounded-xl bg-amber-50 p-5 text-sm text-amber-900"
-              >
-                <strong>To be finalized:</strong>
-                Confirm whether Google, Expo, the hosting provider, or any other
-                provider processes personal data outside the European Economic
-                Area.
-              </div>
-
-              <p class="mt-5">
-                Where personal data is transferred outside the European Economic
-                Area, Organized will rely on an applicable lawful transfer
-                mechanism, such as an adequacy decision, Standard Contractual
-                Clauses, or another mechanism permitted by applicable
-                data-protection law.
+              <p class="mt-3">
+                Third-party services used by Organized may process personal
+                information outside the European Economic Area. The applicable
+                processing and international transfer arrangements are governed
+                by the relevant provider's privacy policy and contractual
+                arrangements.
               </p>
 
-              <div
-                class="mt-5 rounded-xl bg-amber-50 p-5 text-sm text-amber-900"
-              >
-                <strong>To be finalized:</strong>
-                List applicable international transfer mechanisms and relevant
-                countries, if any.
-              </div>
+              <p class="mt-3">
+                For more information about how these providers handle personal
+                information and international transfers, please consult their
+                respective privacy policies:
+              </p>
+
+              <ul class="mt-3 list-disc space-y-2 pl-6">
+                <li>
+                  <a
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-primary hover:underline"
+                  >
+                    Google Privacy Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://expo.dev/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-primary hover:underline"
+                  >
+                    Expo Privacy Policy
+                  </a>
+                </li>
+
+                <!-- <li>
+                  <a
+                    href="[HOSTING_PROVIDER_PRIVACY_POLICY_URL]"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-primary hover:underline"
+                  >
+                    Hosting provider privacy policy
+                  </a>
+                </li> -->
+              </ul>
             </div>
           </div>
         </section>
@@ -974,12 +1088,6 @@
               processing personal data of children, including requirements
               concerning consent, those requirements apply.
             </p>
-
-            <div class="rounded-xl bg-amber-50 p-5 text-sm text-amber-900">
-              <strong>To be finalized:</strong>
-              Confirm whether any processing of users aged 13–14 is based on
-              consent or another legal basis.
-            </div>
 
             <p>
               If you believe that a child under 13 has provided personal
@@ -1030,7 +1138,7 @@
             </p>
 
             <p>
-              <strong>[LEGAL NAME / CONTROLLER IDENTITY — PLACEHOLDER]</strong>
+              <strong>S Veerapen</strong>
             </p>
 
             <p>
@@ -1054,58 +1162,98 @@
           <div class="mt-5 space-y-4 text-gray-700 leading-7">
             <p>
               Where the GDPR applies, Organized processes personal data only
-              where a valid legal basis exists.
+              where a valid legal basis exists. The applicable legal basis
+              depends on the processing activity.
+            </p>
+
+            <div
+              class="overflow-x-auto rounded-2xl border border-gray-200 bg-white"
+            >
+              <table class="min-w-full text-left text-sm">
+                <thead class="border-b border-gray-200 bg-gray-50">
+                  <tr>
+                    <th class="px-5 py-4 font-semibold text-gray-900">
+                      Processing activity
+                    </th>
+                    <th class="px-5 py-4 font-semibold text-gray-900">
+                      Legal basis
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-5 py-4">
+                      Account creation, authentication, and account management
+                    </td>
+                    <td class="px-5 py-4">Performance of a contract</td>
+                  </tr>
+
+                  <tr>
+                    <td class="px-5 py-4">
+                      Synchronization and provision of core Service
+                      functionality
+                    </td>
+                    <td class="px-5 py-4">Performance of a contract</td>
+                  </tr>
+
+                  <tr>
+                    <td class="px-5 py-4">
+                      API traffic logging, security, abuse prevention, and
+                      service reliability
+                    </td>
+                    <td class="px-5 py-4">Legitimate interests</td>
+                  </tr>
+
+                  <tr>
+                    <td class="px-5 py-4">
+                      Investigation of voluntarily submitted bug reports and
+                      feedback
+                    </td>
+                    <td class="px-5 py-4">Legitimate interests</td>
+                  </tr>
+
+                  <tr>
+                    <td class="px-5 py-4">
+                      Identifying recurring technical problems and improving
+                      Service reliability
+                    </td>
+                    <td class="px-5 py-4">Legitimate interests</td>
+                  </tr>
+
+                  <tr>
+                    <td class="px-5 py-4">
+                      Compliance with applicable legal obligations
+                    </td>
+                    <td class="px-5 py-4">Legal obligation</td>
+                  </tr>
+
+                  <tr>
+                    <td class="px-5 py-4">
+                      Establishing, exercising, or defending legal claims
+                    </td>
+                    <td class="px-5 py-4">
+                      Legitimate interests or another applicable legal basis,
+                      depending on the circumstances
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              Organized does not rely on consent as the legal basis for access
+              to or use of the core Service. Where a specific processing
+              activity is introduced that legally requires consent, Organized
+              will obtain that consent before carrying out the relevant
+              processing.
             </p>
 
             <p>
-              Depending on the specific processing activity, the applicable
-              legal basis may include:
+              Processing based on legitimate interests is carried out only where
+              Organized's interests are not overridden by the rights and
+              freedoms of the individuals concerned.
             </p>
-
-            <ul class="space-y-4">
-              <li>
-                <strong>Performance of a contract:</strong>
-                where processing is necessary to provide the Organized account,
-                synchronization, authentication, or other services you request.
-              </li>
-
-              <li>
-                <strong>Legitimate interests:</strong>
-                where processing is necessary for purposes such as maintaining
-                service security, preventing abuse, troubleshooting technical
-                problems, or protecting the service, provided that those
-                interests are not overridden by your rights and freedoms.
-              </li>
-
-              <li>
-                <strong>Legal obligation:</strong>
-                where processing is necessary for Organized to comply with a
-                legal obligation.
-              </li>
-
-              <li>
-                <strong>Consent:</strong>
-                where Organized specifically relies on your consent for a
-                processing activity.
-              </li>
-            </ul>
-
-            <p>
-              The applicable legal basis depends on the processing activity and
-              is not necessarily the same for all information.
-            </p>
-
-            <div class="rounded-xl bg-amber-50 p-5 text-sm text-amber-900">
-              <strong>To be finalized:</strong>
-              Finalize and verify the Article 6 legal basis for each processing
-              activity before publication.
-            </div>
-
-            <div class="rounded-xl bg-gray-50 p-5 text-sm text-gray-700">
-              <strong>Recommended:</strong>
-              Add a processing table mapping each category of data to its
-              purpose, legal basis, and retention period.
-            </div>
           </div>
         </section>
 
@@ -1150,16 +1298,16 @@
       </div>
 
       <!-- Footer -->
-      <footer
-        class="mt-16 border-t border-gray-200 pt-8 text-center text-sm text-gray-500"
-      >
+      <footer class="mt-8 text-center text-sm text-gray-500">
         <p>© 2026 Organized</p>
 
-        <div class="mt-3 flex justify-center gap-4">
-          <a href="./delete-account.html" class="hover:text-gray-900">
-            Delete account
+        <nav class="mt-2 flex justify-center gap-4">
+          <a href="./" class="transition hover:text-primary"> Home </a>
+
+          <a href="./delete-account" class="transition hover:text-primary">
+            Delete Account
           </a>
-        </div>
+        </nav>
       </footer>
     </main>
   </body>
